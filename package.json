@@ -1,0 +1,25 @@
+{
+  "name": "jmbox",
+  "version": "1.0.0",
+  "description": "demo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andycao/demo.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "andy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andycao/demo/issues"
+  },
+  "homepage": "https://github.com/andycao/demo#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
