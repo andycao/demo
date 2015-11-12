@@ -1,0 +1,21 @@
+{
+  "name": "ngdemo",
+  "homepage": "https://github.com/andycao/demo",
+  "authors": [
+    "Andy Cao <cao_huayu@hotmail.com>"
+  ],
+  "description": "angular todo",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
