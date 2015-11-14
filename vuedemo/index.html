@@ -1,0 +1,35 @@
+<!doctype>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>vue todo</title>
+  <script src="bower_components/vue/dist/vue.js"></script>
+  <style>
+  .done-true{
+    text-decoration: line-through;
+  }
+  </style>
+</head>
+<body>
+  <div id="todoApp">
+    <h2>todos demo</h2>
+    <p>剩余未完成: {{ doneCount }}</p>
+    <hr>
+    <div>
+      <form v-on:submit="addTodo(newTodo, $event)" >
+        <p v-for="todo in todos">
+          <input type="checkbox" v-model="todo.done">
+          <span class="done-{{ todo.done }}">{{todo.text}}</span>
+        </p>
+        <p>
+          <input type="text" v-model="newTodo">
+          <input type="submit" value="添加">
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "vuedemo",
+  "homepage": "https://github.com/andycao/demo",
+  "authors": [
+    "Andy Cao <cao_huayu@hotmail.com>"
+  ],
+  "description": "vuedemo",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "~1.0.8"
+  }
+}

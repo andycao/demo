@@ -2,12 +2,15 @@
 
 ##myapp - express,jade,stylus 页面
   
-  测试命令
-    $cd myapp
-    $npm install
-    $debug=myapp ./bin/www
+  测试
 
-    访问 localhost:3000
+  $cd myapp
+
+  $npm install
+    
+  $debug=myapp ./bin/www
+
+  访问 localhost:3000
 
 
 ##ngdemo - angular, directive, todo

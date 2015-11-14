@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>vue hello</title>
+  <script src="bower_components/vue/dist/vue.js"></script>
+
+</head>
+<body>
+  <div id="my">
+
+    <h1>{{ text }}</h1>
+
+  </div>
+
+  <script>
+  var vm = new Vue({
+    el : "#my",
+    data : {
+      text : 'Hello Vue !'
+    }
+  });
+
+  console.log(vm)
+  </script>
+</body>
+</html>

@@ -1,7 +1,6 @@
 var mytodo = angular.module('todoApp', []);
 
 mytodo.controller('myController',['$scope', function($scope){
-  $scope.test = 'hello';
 
   $scope.todos = 
   [

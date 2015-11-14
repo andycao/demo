@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
-<meta charset="utf-8">
 <head>
+  <meta charset="utf-8">
   <title>todo demo</title>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="scripts/main.js"></script>
@@ -20,7 +20,7 @@
 <body ng-app="todoApp">
 <div class="main" ng-controller="myController as mycon">
   <h1>todos 列表</h1>
-  <p>剩余未完成：{{ remaining }}</p>
+  <p>剩余未完成：{{ remaining() }}</p>
   <hr>
   <div>
     <form ng-submit="addTodo()">
@@ -33,7 +33,7 @@
       <input my-button type="submit" value="添加">
     </p>
     <hr>
-    <button my-button>directive</button>
+    <button my-button>my directive</button>
     
     </form>
   </div>
