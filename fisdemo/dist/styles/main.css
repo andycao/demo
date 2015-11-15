@@ -1,0 +1,25 @@
+html {
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.img-inside img {
+  width: 100%;
+}
+.link-wrap {
+  background-color: #c83c2c;
+  text-align: center;
+  padding: 30px 0;
+}
+.link-wrap a img {
+  width: 40%;
+}
+.link-wrap p {
+  padding: 5px 0;
+  color: #fcf1d4;
+}
+.link-wrap p.first {
+  margin-top: 20px;
+}

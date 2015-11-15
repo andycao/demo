@@ -19,3 +19,21 @@
 
   访问 ngdemo/index.html
 
+
+##vuedemo - vue, todos
+  
+  $bower install
+
+  访问 vuedemo/index.html
+
+##fisdemo - fis3, jade, stylus
+
+  $npm install -g fis3
+  
+  $npm install -g fis-parser-jade
+
+  $npm install -g fis-parser-stylus2
+
+
+  $fis3 server start
+
