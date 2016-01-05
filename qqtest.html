@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>qq test</title>
+    <style type="text/css">
+    .hide{
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <h3>qq test</h3>
+    <div class="hide" id="WPAContainer">
+        <!-- WPA Button Begin -->
+        <script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODAxMTk5Nl8zMzUyMDFfNDAwMDY4MTE3Nl8"></script>
+        <!-- WPA Button End -->
+    </div>
+    <hr>
+    <button id="mybutton">my button</button>
+    <script type="text/javascript">
+    var openWPA = function () {
+        var btn = document.getElementById("WPAContainer").getElementsByTagName("iframe")[0].contentWindow.document.getElementById("launchBtn");
+        if (btn.click) {
+            btn.click();
+        } else {
+            var e = document.createEvent('MouseEvent');
+            e.initEvent('click', false, false);
+            btn.dispatchEvent(e);
+        }
+    };
+
+    document.getElementById("mybutton").onclick = function(){
+        openWPA();
+    };
+    </script>
+</body>
+</html>
