@@ -9,6 +9,7 @@
   "author": "andycao",
   "license": "ISC",
   "dependencies": {
-    "codemirror": "^5.10.0"
+    "codemirror": "^5.10.0",
+    "requirejs": "^2.1.22"
   }
 }
