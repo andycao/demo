@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 indexPage
+  hr
+  p
+    input(type='text' name='name' placeholder='name')  
+  p
+    input(type='text' name='password' placeholder='password')
+
+  button(id='mysubmit') submit
+
+  hr
+  p
+    input(type='text' name='userid' placeholder='userid to delete')
+  button(id='deleteuser') delete
+
+block script
+  script(src='/js/index.js')
