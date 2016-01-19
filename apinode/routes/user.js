@@ -25,13 +25,7 @@ var Project = seque.define('project', {
     deadline: Sequelize.DATE
 });
 
-//get
-router.get('/:id', function(req, res){
-    var userid = req.params.id;
-    User.findById(userid).then(function(result){
-        res.json(result.dataValues);
-    });
-});
+
 
 //list
 router.get('/list', function(req, res) {
@@ -51,21 +45,34 @@ router.post('/add', function(req, res) {
         password: tmp.password
     }).then(function(result){
         console.log(result.get({plain:true}));
-        res.send(JSON.stringify({ result : 'succ'}));
+        res.send({ result : 'succ'});
+    });
+});
+
+//get
+router.get('/:id', function(req, res){
+    var userid = req.params.id;
+    User.findById(userid).then(function(result){
+        res.json(result.dataValues);
     });
 });
 
 //delete
-router.delete('/delete/:id', function(req, res) {
+router.delete('/:id', function(req, res) {
     var userid = req.params.id;
-    console.log(userid);
 
-    User.findById({
-        id: userid
-    }).then(function(user){
-        console.log(result);
-        res.send(JSON.stringify({ result : 'succ'}));
+    User.findById(userid).then(function(user){
+        user.destroy().then(function(result){
+            console.log(result);
+            res.send({ result : 'succ'});
+        })
     })
 });
+
+//update
+router.put('/:id', function(req, res) {
+    var 
+});
+
 
 module.exports = router;

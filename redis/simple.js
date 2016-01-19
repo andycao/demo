@@ -32,6 +32,14 @@ for(var i = 0; i < keys.length; i++){
 
 client.hgetallAsync('test').then(function(res) {
     console.log(res);
-    client.quit();
 });
 
+client.sadd('myset', 'userid1', function(err, reply){
+    redis.print;
+})
+.then(function(){
+    client.incrAsync('userid1');
+}).then(function(result){
+    console.log(result);
+    client.quit();
+})

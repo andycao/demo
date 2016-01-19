@@ -24,7 +24,7 @@ $( document ).ready(function() {
         var userid = $("input[name='userid']").val();
         $.ajax({
             type: 'DELETE',
-            url: '/user/delete/' + userid,
+            url: '/user/' + userid,
             dataType: 'JSON'
         }).done(function( response ) {
 
