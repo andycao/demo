@@ -71,7 +71,12 @@ router.delete('/:id', function(req, res) {
 
 //update
 router.put('/:id', function(req, res) {
-    var 
+    var userid = req.params.id;
+
+    var tmp = req.body;
+    
+    console.log(userid);
+    res.send('response ');
 });
 
 

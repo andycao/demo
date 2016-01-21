@@ -42,4 +42,4 @@ client.sadd('myset', 'userid1', function(err, reply){
 }).then(function(result){
     console.log(result);
     client.quit();
-})
+});

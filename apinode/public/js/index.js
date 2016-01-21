@@ -2,12 +2,10 @@ $( document ).ready(function() {
     console.log($)
 
     $("#mysubmit").click(function(){
-        console.log('ahahahha');
         var newUser = {
             username: $("input[name='name']").val(),
             password: $("input[name='password").val()
         };
-        console.log(newUser);
 
         $.ajax({
             type: 'POST',
@@ -31,4 +29,22 @@ $( document ).ready(function() {
             console.log(response);
         });
     });
+
+    $("#updateuser").click(function () {
+        var userid = $("input[name='updateid']").val();
+        var newUser = {
+            username: $("input[name='newName']").val(),
+            password: $("input[name='newPassword").val()
+        };
+        console.log(newUser);
+        
+        $.ajax({
+            type: 'PUT',
+            url: '/user/' + userid,
+            dataType: 'JSON',
+            data: newUser
+        }).done(function(result){
+            console.log(result);
+        });
+    })
 });

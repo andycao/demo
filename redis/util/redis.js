@@ -32,7 +32,7 @@ var getUsers = function(){
     client.smembersAsync('myset').then(function(result){
         console.log(result);
         return result;
-    })
+    });
 };
 
 module.exports = {
