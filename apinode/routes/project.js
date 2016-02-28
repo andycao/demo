@@ -3,7 +3,7 @@ var router = express.Router();
 
 //sequelize
 var Sequelize = require('sequelize');
-var seque = new Sequelize('test', 'root', '', {
+var seque = new Sequelize('test', 'root', 'password', {
     host: 'localhost',
     dialect: 'mysql',
 
