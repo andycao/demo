@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>avalon入门</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="bower_components/avalon/avalon.js"></script>
+    <script>
+        var model = avalon.define({
+            $id: "test",
+            num: [1,2,3],
+            data: [["a", "b", "c"],["e", "f", "g"],["g", "h", "i"]],
+            click: function(){
+                console.log('click')
+                model.data.set(0,['fefe'])
+            }
+        });
+    </script> 
+</head>
+<body>
+    <div ms-controller="test">
+        <ul ms-repeat-num="num" >
+            <li ms-repeat-data="data[$index]" ms-click="click">
+                {{data}}: {{num}}
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
