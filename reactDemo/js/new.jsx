@@ -48,6 +48,6 @@ var TodoApp = React.createClass({
     }
 });
 
-var mountNode = document.getElementById('example')
+var mountNode = document.getElementById('example');
 ReactDOM.render(<TodoApp />, mountNode);
 

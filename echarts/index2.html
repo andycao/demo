@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index echarts</title>
+    <style type="text/css">
+        .mycharts{
+            height: 600px;
+            border: 1px solid grey;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+<h1>echarts test</h1>
+<div id="chart1" class="mycharts">
+</div>
+
+<script type="text/javascript">
+    var require = {
+        baseUrl : '.',
+        paths : {
+            'jquery': 'lib/jquery/dist/jquery.min',
+            'echarts': 'lib/echarts/build/dist/echarts-all',
+            'zrender': 'lib/zrender/zrender',
+            'underscore': 'lib/underscore/underscore'
+        },
+        shim : {
+            'echarts' : {
+                exports : 'echarts',
+                deps : ['zrender']
+            }
+        },
+        deps: ['js/index2']
+    }
+</script>
+<script src="lib/requirejs/require.js" async></script>
+
+</body>
+</html>
