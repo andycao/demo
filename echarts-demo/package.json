@@ -1,5 +1,5 @@
 {
-  "name": "echarts",
+  "name": "echarts-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "echarts": "^3.2.2",
     "jquery": "^2.2.1",
     "lodash": "^4.6.1"
   }
