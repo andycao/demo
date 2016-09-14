@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #666;
+        }
+        #test{
+            background-color: #aaa;
+            border-radius:50%;
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+
+        }
+        #another{
+            width: 50px;
+            height: 50px;
+            position:absolute;
+            border:1px solid white;
+            top: 75px;
+            left: 75px;
+        }
+    </style>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="test">
+    </div>
+    <div id="another"></div>
+    <script>
+        var stratch = function(ele, width){
+            var top = parseInt(ele.css('top'));
+            var left = parseInt(ele.css('left'));
+            console.log(top);
+            ele.animate({
+                width: width + 'px',
+                height: width + 'px',
+                left: (left - width/2) + 'px',
+                top: (top - width/2) + 'px'
+            }, 5000, function done(){
+                $(this).css({
+                    width: '1px',
+                    height: '1px',
+                    top: '100px',
+                    left: '100px'
+                });
+                stratch($('#test'), 50);
+            });
+        };
+
+
+        stratch($('#test'), 50);
+
+    </script>
+</body>
+</html>

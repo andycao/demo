@@ -12,15 +12,15 @@ module.exports = [{
             exclude: /node_modules/,
             loader: 'babel'
         }]
-    }
-    // plugins: [
-    //     new webpack.optimize.UglifyJsPlugin({
-    //         compress: {
-    //             warnings: false
-    //         },
-    //         output: {
-    //             comments: false
-    //         }
-    //     })
-    // ]
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false
+            }
+        })
+    ]
 }];
