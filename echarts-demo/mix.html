@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #mix{
+            width: 800px;
+            height:450px;
+            margin: 30px auto;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="mix"></div>
+    <script type="text/javascript">
+        var require = {
+            baseUrl : '.',
+            paths : {
+                'jquery': 'lib/jquery/dist/jquery.min',
+                'echarts': 'lib/echarts/build/dist/echarts-all',
+                'zrender': 'lib/zrender/zrender',
+                'underscore': 'lib/underscore/underscore'
+
+            },
+            shim : {
+                'echarts' : {
+                    exports : 'echarts',
+                    deps : ['zrender']
+                }
+            },
+            deps: ['js/mix']
+        }
+    </script>
+    <script src="lib/requirejs/require.js" async></script>
+</body>
+</html>

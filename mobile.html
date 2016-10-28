@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="flexible" content="initial-dpr=1"/>
+    <title>Title</title>
+
+    <meta name='apple-itunes-app' content='app-id=477927812'>
+</head>
+<body>
+    <!-- a标签的链接，设置为对应的下载链接；点击打开的动作，在click事件中注册 -->
+    <a href="https://itunes.apple.com/cn/app/id477927812" id="openApp">贴吧客户端</a>
+    <script type="text/javascript">
+        document.getElementById('openApp').onclick = function(e){
+            // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+            // 否则打开a标签的href链接
+            var ifr = document.createElement('iframe');
+            ifr.src = 'wechat://';
+            ifr.style.display = 'none';
+            document.body.appendChild(ifr);
+            window.setTimeout(function(){
+                document.body.removeChild(ifr);
+            },3000)
+        };
+    </script>
+
+    <h2>灵玑</h2>
+    <img src="" alt="">
+    <p>让科技引领财富</p>
+    <hr>
+    <a href="wechat://">wechat</a>
+
+    <button id="clk">js wechat</button>
+
+    <p>
+        <a href="https://itunes.apple.com/cn/app/ji-mu-he-zi/id790276804?ls=1&mt=8">iphone 下载</a>
+    </p>
+    <p>
+        <a href="#">android 下载</a>
+    </p>
+    <script>
+        var ua = navigator.userAgent;
+        console.log(ua);
+        if(/Android/i.test(ua)){
+
+            console.log('android');
+//            location.href = 'http://app-download.jimubox.com/JimuboxMobile.5.2.5.apk';
+
+        } else if(/iPhone|iPad|iPod/i.test(ua)){
+            console.log('iphone');
+
+            //itunes link
+//            location.href = 'https://itunes.apple.com/cn/app/ji-mu-he-zi/id790276804?ls=1&mt=8';
+
+        } else {
+            console.log('else');
+//            window.location.href = "http://example.com/new_url";
+        }
+
+        document.getElementById('clk').onclick = function () {
+            console.log('aaaadfef');
+            location.href = 'wechat://';
+        }
+    </script>
+</body>
+</html>
