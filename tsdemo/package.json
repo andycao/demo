@@ -1,0 +1,19 @@
+{
+    "name": "ts-demo",
+    "version": "0.0.1",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "lite": "lite-server",
+        "typings": "typings",
+        "postinstall": "typings install"
+    },
+    "author": "andycao",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "typescript": "^1.7.5"
+    }
+}
