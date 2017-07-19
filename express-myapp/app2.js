@@ -6,8 +6,9 @@ app.get('/', function (req, res) {
 });
 
 app.get('/json', function(req, res){
-    res.json({name : 'good'});
-})
+    console.log(req.query.param1);
+    res.json({name : 'good', param1 : req.query.param1});
+});
 
 // var server = app.listen(3000, function () {
 
@@ -19,5 +20,4 @@ app.get('/json', function(req, res){
 // });
 var a = require.resolve('express');
 
-
-app.listen(3000);
+app.listen(3001);
