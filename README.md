@@ -37,3 +37,4 @@
 
   $fis3 server start
 
+test new gacm commend
