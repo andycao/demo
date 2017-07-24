@@ -9,3 +9,6 @@
 # bower and npm
 **/bower_components
 **/node_modules
+
+# git tool merge backup file
+**.orig
