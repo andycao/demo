@@ -42,7 +42,3 @@ test new gacm commend
 ##merge test
 
 this is the master merge message
-
-##merge test
-
-this is the develop branch text
