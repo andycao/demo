@@ -39,9 +39,8 @@
 
 test new gacm commend
 
-master fix and 
-master forward
+master fix and forward
+
 ## rebase test
 
-
-rebase final
+fix new rebase
