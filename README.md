@@ -37,10 +37,11 @@
 
   $fis3 server start
 
-test new gacm commend
 
 master fix and forward
 
 ## rebase test
 
 fix new rebase
+
+force rebase haha
