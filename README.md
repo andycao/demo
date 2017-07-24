@@ -39,7 +39,5 @@
 
 test new gacm commend
 
-##merge test
-
-new master test
+## rebase test
 
