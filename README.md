@@ -39,13 +39,9 @@
 
 test new gacm commend
 
-for rebase testing
-for rebase testing
-for rebase testing
-for rebase testing
+master fix and 
+master forward
 ## rebase test
-for rebase testing
-for rebase testing
 
 
 rebase final
