@@ -44,6 +44,6 @@ master 1
 
 ## rebase test
 
-fix new rebase
-
-force rebase haha
+rebase 1
+rebase 2
+rebase 3
