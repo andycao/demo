@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "echarts": "^3.2.2",
-    "jquery": "^2.2.1",
+    "jquery": "^3.0.0",
     "lodash": "^4.6.1"
   }
 }
