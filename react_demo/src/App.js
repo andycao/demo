@@ -34,8 +34,12 @@ function logProps(WrappedComponent) {
         console.log('Next props: ', nextProps);
       }
       render() {
+          const {title} = this.props;
+          console.log(title);
+          
         // 将 input 组件包装在容器中，而不对其进行修改。Good!
-        return <WrappedComponent {...this.props} />;
+        return <WrappedComponent 
+        {...this.props} />;
       }
     }
   }
